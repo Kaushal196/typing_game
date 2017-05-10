@@ -3,12 +3,17 @@ body
 width: 100%; 
 margin: 0 auto; 
 padding: 0; 
+background-color: #000;
 } 
 
 .bubb
 { 
 position: absolute; 
-font: bold 14px verdana; 
+font: bold 25px verdana; 
+color: white;
+border-radius: 100px;
+height: 35px;
+width: 35px;
 text-align: center; 
 -webkit-border-radius: 20px; 
 -moz-border-radius: 20px; 
@@ -32,7 +37,7 @@ text-align:right;
 
 #start
 { 
-width: 50px; 
+
 padding: 10px 15px; 
 text-align: center; 
 font:bold 15px arial; 

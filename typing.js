@@ -19,12 +19,13 @@ genLetter();
 
 $(document).keydown(function(event){
 	var keycode = event.keyCode;
+	console.log(keycode);
     $('.bubb'+keycode).fadeOut('slow').hide('slow',function(){
     	code+=10;
     	$('#score').html(code);
     	$(this).remove();
     });
-        
+           
 
 });
 
@@ -35,6 +36,7 @@ function genLetter()
 	var ch = String.fromCharCode(k);
 	var top = Math.floor(Math.random()*height);
 	var left = Math.floor(Math.random()*width);
+	var l = 0;
 	$('body').append('<span class="bubb bubb'+k+'">'+ch+'</span>')
 	$('.bubb'+k).css({
 		"left" : left+'px',
@@ -43,16 +45,16 @@ function genLetter()
     });
     
 
-    setTimeout(genLetter,1500);
+    setTimeout(genLetter,1300);
 }
 
 function randomcolor()
 {
 	var color = '#';
-	var values = ['a','b','c','d','e','f','0','1','2','3','4','5','6','7','8','9'];
+	var values = ['a','b','c','d','e','f','1','2','3','4','5','6','7','8','9'];
 	for(c=0; c<6 ; c++)
 	{
-		no = Math.floor(Math.random()*15);
+		no = Math.floor(Math.random()*14);
 		color += values[no];
 	}
 	return color;

@@ -19,20 +19,18 @@ genLetter();
 
 $(document).keydown(function(event){
 	var keycode = event.keyCode;
-    $('.bubb'+keycode).animate({
-    	"top" : height+"px", "opacity" : 0
-    },'slow');
     $('.bubb'+keycode).fadeOut('slow').hide('slow',function(){
-    	code+=30;
+    	code+=10;
     	$('#score').html(code);
     	$(this).remove();
     });
+        
+
 });
 
 function genLetter()
 {
-
-	var color = randomcolor();
+    var color = randomcolor();
 	var k = Math.floor(Math.random()*(90 - 65 +1))+65;
 	var ch = String.fromCharCode(k);
 	var top = Math.floor(Math.random()*height);
@@ -41,13 +39,13 @@ function genLetter()
 	$('.bubb'+k).css({
 		"left" : left+'px',
 		"top"  : top+'px',
-		"background-color": color,
+		"background-color" : color,
     });
-    setTimeout(genLetter, 500);
+    
 
-    
-    
+    setTimeout(genLetter,1500);
 }
+
 function randomcolor()
 {
 	var color = '#';

@@ -8,16 +8,18 @@ padding: 0;
 .bubb
 { 
 position: absolute; 
-width:30px; 
-height: 30px; 
 font: bold 14px verdana; 
-
 text-align: center; 
 -webkit-border-radius: 20px; 
 -moz-border-radius: 20px; 
 vertical-align: middle; 
 padding: 5px;
+animation: mymove 5s infinite;
 } 
+@keyframes mymove {
+    0%   {top: 500px;}
+    100% {top: 0px;}
+}
 
 #score
 {
@@ -36,8 +38,8 @@ text-align: center;
 font:bold 15px arial; 
 background-color: #dedede; 
 color: #000; 
--webkit-border-radius: 6px; 
--moz-border-radius: 6px; 
+-webkit-border-radius: 16px; 
+-moz-border-radius: 16px; 
 position: absolute; 
 } 
 

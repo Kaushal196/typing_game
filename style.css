@@ -1,0 +1,55 @@
+body
+{ 
+width: 100%; 
+margin: 0 auto; 
+padding: 0; 
+background-color: #000;
+} 
+
+.bubb
+{ 
+position: absolute; 
+font: bold 25px verdana; 
+color: white;
+border-radius: 100px;
+height: 35px;
+width: 35px;
+text-align: center; 
+-webkit-border-radius: 20px; 
+-moz-border-radius: 20px; 
+vertical-align: middle; 
+padding: 5px;
+animation: mymove 5s infinite;
+} 
+@keyframes mymove {
+    0%   {top: 500px;}
+    100% {top: 0px;}
+}
+
+#score
+{
+font-size:46px; 
+top: 25px; 
+right: 50px; 
+display: none; 
+text-align:right; 
+color: white;
+} 
+
+#start
+{ 
+
+padding: 10px 15px; 
+text-align: center; 
+font:bold 15px arial; 
+background-color: #dedede; 
+color: #000; 
+-webkit-border-radius: 16px; 
+-moz-border-radius: 16px; 
+position: absolute; 
+} 
+
+#start:hover
+{ 
+cursor: pointer; 
+}

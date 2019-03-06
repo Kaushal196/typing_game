@@ -40,7 +40,7 @@ $(document).keydown(function(event){
 	code+=10;
 	lives--;
 	$('#score').html(code);  
-	$('#lives').html(code);
+	$('#lives').html(lives);
 
 });
 

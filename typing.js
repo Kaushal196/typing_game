@@ -38,6 +38,7 @@ $(document).keydown(function(event){
 	var index = min(ar)
 	$('[class*='+classname+']')[index].remove();
 	code+=10;
+	lives--;
 	$('#score').html(code);           
 
 });

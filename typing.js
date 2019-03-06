@@ -39,7 +39,8 @@ $(document).keydown(function(event){
 	$('[class*='+classname+']')[index].remove();
 	code+=10;
 	lives--;
-	$('#score').html(code);           
+	$('#score').html(code);  
+	$('#lives').html(code);
 
 });
 
